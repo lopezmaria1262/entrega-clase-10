@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+.container{
+    width: 100%;
+    max-width: 122.5rem;
+    
+}
+
+h1 {
+    font-family: 'Hind', sans-serif;;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Hind', sans-serif;
+    color: bisque;
+    background-color: #b26c3e;
+    font-size: 40px;
+    font-weight: bolder
+  
+}
+ p {
+     text-align: center;
+     font-family: 'Hind', sans-serif;
+     font-size: 1.6rem;
+     margin: 15px;
+}
+h2 {
+    font-family: 'Hind', sans-serif;
+   
+}
+h3 {
+    font-family: 'Hind', sans-serif;
+    margin: 15px;
+}
+h4 {
+    font-family: 'Hind', sans-serif;
+    margin: 15px;
+}
+
+
+
+.barraDesktop ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    padding: 0 20px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 10px;
+}
+
+.barraMobile{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    .barraDesktop ul{
+        display: none;
+    }
+    .barraMobile{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-family: 'Hind', sans-serif; 
+        background-color: white;
+        padding: 1rem;
+        padding: 0 20px;
+        color: black; 
+        text-decoration: none; 
+        text-transform: uppercase; 
+        font:bold 10px;
+    }
+    .barraMobile ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 768px){
+    .barraDesktop ul{
+        display: none;
+    }
+    .barraMobile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: 'Hind', sans-serif;
+        background-color: white;
+        padding: 1rem;
+        padding: 0 20px;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font: bold 10px;
+    }
+    .barraMobile ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+    
+
+.naveg:hover{
+    color: #b26c3e;
+}
+
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+
+
+.section{
+    background-color: #fba8a4;
+    background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+    padding: 30px;
+   
+}
+.section-1{
+    text-align: center;
+}
+
+div .galeria img{
+    padding: 30px;
+}
+
+
+/*FOOTER*/
+.pie {
+    font-family: 'Hind', sans-serif;
+    background-color:#f8bfb9 ;
+    padding: 50px;
+}
+
+.pie .grupo-1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+}
+.pie .grupo-1 .box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3 .redes .a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width:768px){
+    .pie .grupo-1{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+    @media screen and (max-width:480px){
+        .pie .grupo-1{
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+        }
+}
+
+/*NOSOTROS*/
+.nosotros{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat (2,1fr);
+    background-color: #fba8a4;
+    background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+}
+
+/* MENU */
+.container-3{
+display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.3fr 0.5fr; 
+  gap: 9px 9px; 
+  grid-template-areas: 
+    "gustos-1 gustos-2 gustos-3 gustos-4"
+    "choco dulce crema fruta"  
+    
+    ;
+}
+.postres{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.postres figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+}
+.postres figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.postres figure .descripcion{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    color: white;
+    font-style: bold;
+}
+.postres figure:hover> .descripcion{
+    opacity: 1;
+}
