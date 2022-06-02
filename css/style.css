@@ -32,6 +32,7 @@ h1 {
 }
 h2 {
     font-family: 'Hind', sans-serif;
+    margin: 15px;
    
 }
 h3 {
@@ -197,9 +198,10 @@ h3 .redes .a{
 
 /* MENU */
 .container-3{
-display: grid; 
+    padding: 5px;
+    display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 0.3fr 0.5fr; 
+  grid-template-rows: 0.5fr 0.5fr; 
   gap: 9px 9px; 
   grid-template-areas: 
     "gustos-1 gustos-2 gustos-3 gustos-4"
@@ -207,6 +209,7 @@ display: grid;
     
     ;
 }
+
 .postres{
     width: 100%;
     display: flex;
