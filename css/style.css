@@ -11,13 +11,13 @@
     
 }
 
-h1 {
-    font-family: 'Hind', sans-serif;;
+.naveg{
+    font-family:'Raleway', sans-serif; 
+    font-size: large;
 }
 .titulo {
     display: flex;
     justify-content: center;
-    font-family: 'Hind', sans-serif;
     color: bisque;
     background-color: #b26c3e;
     font-size: 40px;
@@ -26,25 +26,46 @@ h1 {
 }
  p {
      text-align: center;
-     font-family: 'Hind', sans-serif;
+     font-family: 'Jost', sans-serif;
      font-size: 1.6rem;
      margin: 15px;
 }
+
 h2 {
-    font-family: 'Hind', sans-serif;
+    font-family:  'Raleway', sans-serif;
     margin: 15px;
    
 }
 h3 {
-    font-family: 'Hind', sans-serif;
+    font-family: 'Jost', sans-serif;
     margin: 15px;
 }
 h4 {
-    font-family: 'Hind', sans-serif;
+    font-family: 'Jost', sans-serif;
     margin: 15px;
 }
 
+.carousel-texto{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-style: italic;
+}
+.productos{
+    background-color:   black;
+    padding: 70px;
+}
+.card-text{
+    background-color: #f7789a;
+}
 
+.pedidos-ya{
+    background-image: url(../multimedia/mejor.jpeg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px;
+}
 
 .barraDesktop ul{
     display: flex;
@@ -114,6 +135,9 @@ h4 {
 .naveg:hover{
     color: #b26c3e;
 }
+a:hover{
+    color:#f7789a
+}
 
 ul li {
     list-style: none;
@@ -133,7 +157,9 @@ a {
 }
 .section-1{
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
+
 
 div .galeria img{
     padding: 30px;
@@ -142,8 +168,8 @@ div .galeria img{
 
 /*FOOTER*/
 .pie {
-    font-family: 'Hind', sans-serif;
-    background-color:#f8bfb9 ;
+    font-family: 'Jost', sans-serif;
+    background-color:#fab8ca ;
     padding: 50px;
 }
 
@@ -205,11 +231,17 @@ h3 .redes .a{
   gap: 9px 9px; 
   grid-template-areas: 
     "gustos-1 gustos-2 gustos-3 gustos-4"
-    "choco dulce crema fruta"  
-    
-    ;
+    "choco dulce crema fruta";
+}
+#img-fondo{
+    background-image: url(../multimedia/ice.jpg);
+    background-size: cover;
 }
 
+.mb-5{
+    background: rgba(5, 7, 12, 0.40);
+    padding: 40px;
+}
 .postres{
     width: 100%;
     display: flex;
@@ -238,3 +270,8 @@ h3 .redes .a{
 .postres figure:hover> .descripcion{
     opacity: 1;
 }
+.rounded{
+    clip-path: circle();
+}
+/* SUCURSAL */
+
